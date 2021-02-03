@@ -68,3 +68,34 @@ section {
 	border-radius: 8px;
 }
 
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #000000;
+
+	}
+	p, h1, h2, h3, label {
+		color: rgba(194, 194, 194, 0.95)
+	}
+
+	article {
+		background-color: #000028;
+		box-shadow: 8px 8px 100px rgba(187, 187, 187, 0.33);
+	}
+}
+
+
+
+@media screen {
+	p:first-child {
+		display: none;
+	}
+}
+
+@media print {
+	p:first-child {
+		display: block;
+	}
+	main, label, input {
+		display: none;
+	}
+}
